@@ -23,15 +23,23 @@ import "../../styles/global.css";
         <a href="/">Home</a>
         <a href="/projects/light-show/">Light Show</a>
         <a href="https://github.com/as006sa" target="_blank" rel="noreferrer">GitHub</a>
+        <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
       </nav>
     </header>
 
     <main>
       <section class="case-hero">
-        <p class="eyebrow">Internal Systems Case Study</p>
-        <h1>Enterprise intranet systems for workflows, assets, approvals, and operations.</h1>
+        <p class="eyebrow">
+          <span data-en>Internal Systems Case Study</span>
+          <span data-zh>企業內部系統案例</span>
+        </p>
+        <h1>
+          <span data-en>Enterprise intranet systems for workflows, assets, approvals, and operations.</span>
+          <span data-zh>企業內網系統：流程、資產、簽核與營運管理工具。</span>
+        </h1>
         <p class="lead">
-          This case study summarizes private company work at an architecture and workflow level. It avoids internal URLs, data, screenshots, credentials, and confidential process details.
+          <span data-en>This case study summarizes private company work at an architecture and workflow level. It avoids internal URLs, data, screenshots, credentials, and confidential process details.</span>
+          <span data-zh>此案例以架構與流程層級描述公司內部專案，不公開內部網址、資料、截圖、帳號密碼或機密流程細節。</span>
         </p>
         <div class="hero-actions">
           <a class="button primary" href="/">Back to portfolio</a>
@@ -40,60 +48,77 @@ import "../../styles/global.css";
 
       <section class="section detail-grid">
         <aside class="fact-panel">
-          <h2>Project Facts</h2>
+          <h2><span data-en>Project Facts</span><span data-zh>專案資訊</span></h2>
           <dl>
             <div>
-              <dt>Type</dt>
-              <dd>Enterprise intranet and workflow modules</dd>
+              <dt><span data-en>Type</span><span data-zh>類型</span></dt>
+              <dd><span data-en>Enterprise intranet and workflow modules</span><span data-zh>企業內網與流程系統模組</span></dd>
             </div>
             <div>
-              <dt>Role</dt>
-              <dd>Feature development, optimization, and maintenance</dd>
+              <dt><span data-en>Role</span><span data-zh>角色</span></dt>
+              <dd><span data-en>Feature development, optimization, and maintenance</span><span data-zh>功能開發、優化與維護</span></dd>
             </div>
             <div>
-              <dt>Stack</dt>
+              <dt><span data-en>Stack</span><span data-zh>技術</span></dt>
               <dd>Vue 3, Vite, FastAPI, Python, database-backed APIs, Element Plus, PrimeVue</dd>
             </div>
             <div>
-              <dt>Scope</dt>
-              <dd>Approval flows, forms, permissions, file handling, reporting, and operational data views</dd>
+              <dt><span data-en>Scope</span><span data-zh>範圍</span></dt>
+              <dd><span data-en>Approval flows, forms, permissions, file handling, reporting, and operational data views</span><span data-zh>簽核流程、表單、權限、檔案處理、報表與營運資料檢視</span></dd>
             </div>
           </dl>
         </aside>
 
         <article class="article-body">
-          <h2>Context</h2>
+          <h2><span data-en>Context</span><span data-zh>背景</span></h2>
           <p>
-            Internal operations often start as spreadsheets, emails, shared folders, and manual follow-ups. The engineering challenge is not only building screens, but encoding business rules into a system that people can trust and maintain.
+            <span data-en>Internal operations often start as spreadsheets, emails, shared folders, and manual follow-ups. The engineering challenge is not only building screens, but encoding business rules into a system that people can trust and maintain.</span>
+            <span data-zh>公司內部流程常從 Excel、Email、共享資料夾與人工追蹤開始。工程挑戰不只是做畫面，而是把業務規則整理成能被信任與維護的系統。</span>
           </p>
 
-          <h2>Modules Delivered</h2>
+          <h2><span data-en>Modules Delivered</span><span data-zh>交付模組</span></h2>
           <ul class="feature-list">
-            <li>OKR evaluation and workflow redesign.</li>
-            <li>ECN engineering change notification process.</li>
-            <li>Overtime request and effectiveness tracking.</li>
-            <li>Foreign business trip request and reimbursement workflow.</li>
-            <li>Project code management and role delegation.</li>
-            <li>Asset QR code labels, asset inventory, history tracking, and equipment maintenance.</li>
-            <li>BOM version control and operational pricing tools.</li>
+            <li><span data-en>OKR evaluation and workflow redesign.</span><span data-zh>OKR 評核與流程重整。</span></li>
+            <li><span data-en>ECN engineering change notification process.</span><span data-zh>ECN 工程變更通知流程。</span></li>
+            <li><span data-en>Overtime request and effectiveness tracking.</span><span data-zh>加班申請與成效追蹤。</span></li>
+            <li><span data-en>Foreign business trip request and reimbursement workflow.</span><span data-zh>國外出差申請與核銷流程。</span></li>
+            <li><span data-en>Project code management and role delegation.</span><span data-zh>專案代碼管理與職務代理。</span></li>
+            <li><span data-en>Asset QR code labels, asset inventory, history tracking, and equipment maintenance.</span><span data-zh>資產 QRCode 標籤、資產盤點、歷程追蹤與設備維護。</span></li>
+            <li><span data-en>BOM version control and operational pricing tools.</span><span data-zh>BOM 版控與營運價格工具。</span></li>
           </ul>
 
-          <h2>Engineering Problems</h2>
+          <h2><span data-en>Engineering Problems</span><span data-zh>工程問題</span></h2>
           <p>
-            These systems required careful treatment of form states, approval stages, user permissions, file attachments, version history, searchable tables, exports, and changes requested by business users after real usage.
+            <span data-en>These systems required careful treatment of form states, approval stages, user permissions, file attachments, version history, searchable tables, exports, and changes requested by business users after real usage.</span>
+            <span data-zh>這些系統需要處理表單狀態、簽核關卡、使用者權限、檔案附件、版本歷程、查詢表格、匯出，以及實際使用後來自業務單位的流程調整。</span>
           </p>
 
-          <h2>Implementation Focus</h2>
+          <h2><span data-en>Implementation Focus</span><span data-zh>實作重點</span></h2>
           <p>
-            I worked with Vue-based interfaces, reusable business forms, FastAPI endpoints, database-backed data models, and UI libraries suitable for dense internal tools. The goal was clarity, traceability, and fast daily operation rather than decorative UI.
+            <span data-en>I worked with Vue-based interfaces, reusable business forms, FastAPI endpoints, database-backed data models, and UI libraries suitable for dense internal tools. The goal was clarity, traceability, and fast daily operation rather than decorative UI.</span>
+            <span data-zh>我主要處理 Vue 介面、可重用的業務表單、FastAPI endpoints、資料庫模型，以及適合高密度內部工具的 UI 元件。目標是清楚、可追蹤、能支援日常快速操作。</span>
           </p>
 
-          <h2>What This Shows</h2>
+          <h2><span data-en>What This Shows</span><span data-zh>呈現能力</span></h2>
           <p>
-            This work demonstrates that I can understand messy operational requirements, translate them into system behavior, and keep improving production tools after users begin relying on them.
+            <span data-en>This work demonstrates that I can understand messy operational requirements, translate them into system behavior, and keep improving production tools after users begin relying on them.</span>
+            <span data-zh>這些工作呈現我能理解複雜的營運需求，將需求轉換成系統行為，並在使用者開始依賴後持續維護與優化。</span>
           </p>
         </article>
       </section>
     </main>
+    <script>
+      const button = document.querySelector("[data-lang-toggle]");
+      const savedLang = localStorage.getItem("portfolio-lang");
+      const initialLang = savedLang === "zh" || savedLang === "en" ? savedLang : navigator.language?.startsWith("zh") ? "zh" : "en";
+      function setLang(lang: "en" | "zh") {
+        document.documentElement.dataset.lang = lang;
+        document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
+        localStorage.setItem("portfolio-lang", lang);
+        if (button) button.textContent = lang === "zh" ? "EN" : "中文";
+      }
+      setLang(initialLang);
+      button?.addEventListener("click", () => setLang(document.documentElement.dataset.lang === "zh" ? "en" : "zh"));
+    </script>
   </body>
 </html>

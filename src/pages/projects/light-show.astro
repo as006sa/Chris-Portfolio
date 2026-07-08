@@ -24,15 +24,23 @@ import "../../styles/global.css";
         <a href="/projects/intranet-systems/">Intranet</a>
         <a href="https://github.com/as006sa" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://lighting.hj-corp.cc/" target="_blank" rel="noreferrer">Live site</a>
+        <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
       </nav>
     </header>
 
     <main>
       <section class="case-hero">
-        <p class="eyebrow">Public Product Case Study</p>
-        <h1>Light Show: a production storefront and admin platform.</h1>
+        <p class="eyebrow">
+          <span data-en>Public Product Case Study</span>
+          <span data-zh>公開作品案例</span>
+        </p>
+        <h1>
+          <span data-en>Light Show: a production storefront and admin platform.</span>
+          <span data-zh>Light Show：已上線的燈飾展示網站與後台管理平台。</span>
+        </h1>
         <p class="lead">
-          I built Light Show as an end-to-end product: storefront, admin workflows, API, PostgreSQL database, object storage, deployment, and verification checks.
+          <span data-en>I built Light Show as an end-to-end product: storefront, admin workflows, API, PostgreSQL database, object storage, deployment, and verification checks.</span>
+          <span data-zh>我把 Light Show 從前台展示、後台管理、API、PostgreSQL 資料庫、物件儲存、部署到測試驗證完整做成可上線產品。</span>
         </p>
         <div class="hero-actions">
           <a class="button primary" href="https://lighting.hj-corp.cc/" target="_blank" rel="noreferrer">Open live product</a>
@@ -42,58 +50,75 @@ import "../../styles/global.css";
 
       <section class="section detail-grid">
         <aside class="fact-panel">
-          <h2>Project Facts</h2>
+          <h2><span data-en>Project Facts</span><span data-zh>專案資訊</span></h2>
           <dl>
             <div>
-              <dt>Type</dt>
-              <dd>Production storefront and admin system</dd>
+              <dt><span data-en>Type</span><span data-zh>類型</span></dt>
+              <dd><span data-en>Production storefront and admin system</span><span data-zh>已上線的前台展示網站與後台管理系統</span></dd>
             </div>
             <div>
-              <dt>Role</dt>
-              <dd>Full-stack implementation and deployment</dd>
+              <dt><span data-en>Role</span><span data-zh>角色</span></dt>
+              <dd><span data-en>Full-stack implementation and deployment</span><span data-zh>全端開發與部署</span></dd>
             </div>
             <div>
-              <dt>Stack</dt>
+              <dt><span data-en>Stack</span><span data-zh>技術</span></dt>
               <dd>React, Vite, Express, Neon PostgreSQL, Drizzle, Cloudflare R2, Render, Playwright</dd>
             </div>
             <div>
-              <dt>Status</dt>
-              <dd>Live at lighting.hj-corp.cc</dd>
+              <dt><span data-en>Status</span><span data-zh>狀態</span></dt>
+              <dd><span data-en>Live at lighting.hj-corp.cc</span><span data-zh>已上線：lighting.hj-corp.cc</span></dd>
             </div>
           </dl>
         </aside>
 
         <article class="article-body">
-          <h2>Problem</h2>
+          <h2><span data-en>Problem</span><span data-zh>問題背景</span></h2>
           <p>
-            The project needed more than a static catalog. Products required structured data, multiple images, categories, search and filters, SEO metadata, catalog PDFs, customer inquiries, and an admin workflow for ongoing maintenance.
+            <span data-en>The project needed more than a static catalog. Products required structured data, multiple images, categories, search and filters, SEO metadata, catalog PDFs, customer inquiries, and an admin workflow for ongoing maintenance.</span>
+            <span data-zh>這個專案不只是靜態型錄。商品需要結構化資料、多張圖片、分類、搜尋與篩選、SEO 資料、PDF 型錄、客戶詢價，以及能長期維護的後台流程。</span>
           </p>
 
-          <h2>Approach</h2>
+          <h2><span data-en>Approach</span><span data-zh>做法</span></h2>
           <p>
-            I split the system into a public storefront, admin interface, API server, database schema, shared validation/spec libraries, and test scripts. This made the product easier to reason about and safer to change.
+            <span data-en>I split the system into a public storefront, admin interface, API server, database schema, shared validation/spec libraries, and test scripts. This made the product easier to reason about and safer to change.</span>
+            <span data-zh>我將系統拆成公開前台、後台介面、API server、資料庫 schema、共用驗證與規格模組，以及測試腳本，讓專案更容易維護與修改。</span>
           </p>
 
-          <h2>Key Features</h2>
+          <h2><span data-en>Key Features</span><span data-zh>主要功能</span></h2>
           <ul class="feature-list">
-            <li>Product list, search, filters, product detail pages, related products, and recommended pairings.</li>
-            <li>Admin product CRUD, publish toggle, sort order, image upload/sorting, categories, SEO fields, and CSV import.</li>
-            <li>Inquiry workflow with status management, uploaded attachments, and storage cleanup.</li>
-            <li>Dashboard metrics for products, categories, recommendations, pending inquiries, and R2 usage.</li>
-            <li>Catalog PDF upload and storefront display.</li>
+            <li><span data-en>Product list, search, filters, product detail pages, related products, and recommended pairings.</span><span data-zh>商品列表、搜尋、篩選、商品詳情、相關商品與推薦搭配。</span></li>
+            <li><span data-en>Admin product CRUD, publish toggle, sort order, image upload/sorting, categories, SEO fields, and CSV import.</span><span data-zh>後台商品 CRUD、上下架、排序、圖片上傳與排序、分類、SEO 欄位與 CSV 匯入。</span></li>
+            <li><span data-en>Inquiry workflow with status management, uploaded attachments, and storage cleanup.</span><span data-zh>詢價流程，包含狀態管理、附件上傳與儲存清理。</span></li>
+            <li><span data-en>Dashboard metrics for products, categories, recommendations, pending inquiries, and R2 usage.</span><span data-zh>後台儀表板，呈現商品、分類、推薦、待處理詢價與 R2 使用量。</span></li>
+            <li><span data-en>Catalog PDF upload and storefront display.</span><span data-zh>PDF 型錄上傳與前台展示。</span></li>
           </ul>
 
-          <h2>Delivery Quality</h2>
+          <h2><span data-en>Delivery Quality</span><span data-zh>交付品質</span></h2>
           <p>
-            The repository includes build checks, API smoke testing, and Playwright E2E tests covering homepage load, admin login, product CRUD, product detail, search, SEO title, settings, inquiries, attachments, and mobile admin navigation.
+            <span data-en>The repository includes build checks, API smoke testing, and Playwright E2E tests covering homepage load, admin login, product CRUD, product detail, search, SEO title, settings, inquiries, attachments, and mobile admin navigation.</span>
+            <span data-zh>專案包含 build 檢查、API smoke test 與 Playwright E2E，覆蓋首頁載入、後台登入、商品 CRUD、商品詳情、搜尋、SEO 標題、設定、詢價、附件與手機版後台導覽。</span>
           </p>
 
-          <h2>What This Shows</h2>
+          <h2><span data-en>What This Shows</span><span data-zh>呈現能力</span></h2>
           <p>
-            This project demonstrates product ownership beyond UI work: data modeling, file handling, operational admin design, production hosting, DNS/domain setup, and verification before release.
+            <span data-en>This project demonstrates product ownership beyond UI work: data modeling, file handling, operational admin design, production hosting, DNS/domain setup, and verification before release.</span>
+            <span data-zh>這個專案不只展示 UI 能力，也包含資料建模、檔案處理、後台營運流程設計、正式部署、DNS/網域設定與上線前驗證。</span>
           </p>
         </article>
       </section>
     </main>
+    <script>
+      const button = document.querySelector("[data-lang-toggle]");
+      const savedLang = localStorage.getItem("portfolio-lang");
+      const initialLang = savedLang === "zh" || savedLang === "en" ? savedLang : navigator.language?.startsWith("zh") ? "zh" : "en";
+      function setLang(lang: "en" | "zh") {
+        document.documentElement.dataset.lang = lang;
+        document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
+        localStorage.setItem("portfolio-lang", lang);
+        if (button) button.textContent = lang === "zh" ? "EN" : "中文";
+      }
+      setLang(initialLang);
+      button?.addEventListener("click", () => setLang(document.documentElement.dataset.lang === "zh" ? "en" : "zh"));
+    </script>
   </body>
 </html>

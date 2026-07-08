@@ -9,6 +9,7 @@ Personal portfolio site for `chris.hj-corp.cc`.
   - `/projects/light-show/`
   - `/projects/intranet-systems/`
 - Local visual asset for the hero preview.
+- SEO metadata, sitemap generation, 404 page, and Cloudflare Pages headers.
 - Cloudflare Pages deployment notes.
 
 ## Commands
@@ -40,4 +41,4 @@ Output directory: dist
 
 - Add LinkedIn link if available.
 - Add a resume PDF download if desired.
-- Decide whether to keep this English-only or add a Chinese version.
+- Review the live Cloudflare Pages URL after deployment and then bind `chris.hj-corp.cc`.

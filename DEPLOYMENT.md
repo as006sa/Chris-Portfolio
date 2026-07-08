@@ -27,3 +27,9 @@ Create a CNAME from `chris` to the Cloudflare Pages target assigned during setup
 - Add LinkedIn or resume PDF links when available.
 - Confirm whether the site should remain English-only or become bilingual.
 - Add real screenshots only if they do not expose private company data.
+
+## Included Production Details
+
+- Sitemap is generated during `npm run build`.
+- `public/_headers` adds basic Cloudflare Pages security and asset cache headers.
+- `src/pages/404.astro` provides a static not-found page.

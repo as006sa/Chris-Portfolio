@@ -24,6 +24,6 @@ Create a CNAME from `chris` to the Cloudflare Pages target assigned during setup
 
 ## Before Publishing
 
-- Add LinkedIn, GitHub, or resume PDF links when available.
+- Add LinkedIn or resume PDF links when available.
 - Confirm whether the site should remain English-only or become bilingual.
 - Add real screenshots only if they do not expose private company data.

@@ -38,6 +38,6 @@ Output directory: dist
 
 ## Before Publishing
 
-- Add GitHub and LinkedIn links if available.
+- Add LinkedIn link if available.
 - Add a resume PDF download if desired.
 - Decide whether to keep this English-only or add a Chinese version.

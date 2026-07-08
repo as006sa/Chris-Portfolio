@@ -140,6 +140,47 @@ h1 {
   margin-top: 34px;
 }
 
+.profile-chip {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: inline-flex;
+  gap: 14px;
+  margin-top: 28px;
+  min-height: 78px;
+  padding: 10px 16px 10px 10px;
+  box-shadow: 0 10px 36px rgba(19, 31, 45, 0.08);
+}
+
+.profile-chip img {
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  display: block;
+  height: 58px;
+  object-fit: cover;
+  object-position: center 22%;
+  width: 58px;
+}
+
+.profile-chip strong,
+.profile-chip span {
+  display: block;
+}
+
+.profile-chip strong {
+  color: #111827;
+  font-size: 15px;
+}
+
+.profile-chip span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 750;
+  margin-top: 4px;
+}
+
 .button {
   align-items: center;
   border: 1px solid transparent;

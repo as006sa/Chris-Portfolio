@@ -1,16 +1,33 @@
 # Chris Portfolio
 
-Personal portfolio site for `chris.hj-corp.cc`.
+Resume-style portfolio site for `chris.hj-corp.cc`.
+
+This site presents Chris Tsai's full-stack work around enterprise workflow systems, internal tools, and a live public product.
+
+## Live Links
+
+- Portfolio target domain: `https://chris.hj-corp.cc/`
+- Public product: `https://lighting.hj-corp.cc/`
+- GitHub profile: `https://github.com/as006sa`
 
 ## What Is Included
 
-- Home page with positioning, selected projects, case summaries, timeline, skills, and contact area.
+- Resume-style home page with positioning, target roles, selected projects, recent delivery record, ownership notes, skills, and contact area.
 - Dedicated case pages:
   - `/projects/light-show/`
   - `/projects/intranet-systems/`
-- Local visual asset for the hero preview.
+- Public Light Show screenshots that exclude admin/private data.
 - SEO metadata, sitemap generation, 404 page, and Cloudflare Pages headers.
 - Cloudflare Pages deployment notes.
+- GitHub Profile README draft at `docs/github-profile-readme.md`.
+
+## Stack
+
+- Astro
+- TypeScript
+- Static output
+- Cloudflare Pages target
+- `@astrojs/sitemap`
 
 ## Commands
 
@@ -36,6 +53,13 @@ Framework preset: Astro
 Build command: npm run build
 Output directory: dist
 ```
+
+The build produces:
+
+- Static pages
+- `sitemap-index.xml`
+- `404.html`
+- Cloudflare Pages `_headers`
 
 ## Before Publishing
 

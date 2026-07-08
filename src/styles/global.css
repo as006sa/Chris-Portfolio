@@ -578,6 +578,38 @@ dd {
   margin-top: 8px;
 }
 
+.screenshot-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.screenshot-grid figure {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin: 0;
+  overflow: hidden;
+}
+
+.screenshot-grid img {
+  aspect-ratio: 16 / 10;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+  width: 100%;
+}
+
+.screenshot-grid figcaption {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 850;
+  padding: 10px 12px;
+}
+
 @media (max-width: 900px) {
   .site-header {
     align-items: flex-start;
@@ -593,6 +625,7 @@ dd {
   .resume-hero,
   .entry-grid,
   .detail-grid,
+  .screenshot-grid,
   .contact {
     grid-template-columns: 1fr;
   }

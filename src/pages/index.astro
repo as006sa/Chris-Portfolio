@@ -1,0 +1,365 @@
+---
+import "../styles/global.css";
+
+const projects = [
+  {
+    title: "Light Show",
+    label: "Live public product",
+    href: "/projects/light-show/",
+    external: "https://lighting.hj-corp.cc/",
+    summary:
+      "A production lighting storefront with product management, inquiry handling, SEO controls, R2 file storage, and an admin console.",
+    stack: ["React", "Vite", "Express", "Neon PostgreSQL", "Drizzle", "Cloudflare R2", "Render"],
+    points: [
+      "Designed the storefront and admin workflows around real product and inquiry operations.",
+      "Connected API, PostgreSQL schema, image storage, catalog files, and production deployment.",
+      "Added build checks, API smoke tests, and Playwright E2E coverage for critical flows."
+    ]
+  },
+  {
+    title: "Enterprise Intranet Platform",
+    label: "Internal business systems",
+    href: "/projects/intranet-systems/",
+    external: "",
+    summary:
+      "A suite of internal systems for approval workflows, OKR evaluation, asset tracking, BOM control, and operational reporting.",
+    stack: ["Vue 3", "FastAPI", "Python", "PostgreSQL", "Element Plus", "PrimeVue"],
+    points: [
+      "Moved spreadsheet and paper-based operations into traceable web workflows.",
+      "Implemented forms, permissions, approval stages, file attachments, lists, and reporting views.",
+      "Maintained multiple business modules while adapting to real workflow changes."
+    ]
+  }
+];
+
+const workHighlights = [
+  "OKR evaluation workflow",
+  "ECN engineering change process",
+  "Overtime request and outcome tracking",
+  "Business trip request and reimbursement",
+  "Project code management",
+  "Delegation and permission management",
+  "Asset QR code history tracking",
+  "Asset inventory workflow",
+  "Equipment registration and maintenance",
+  "BOM version control",
+  "Market price and sales cost tools"
+];
+
+const skills = [
+  {
+    title: "Frontend",
+    items: ["Vue 3", "React", "Vite", "Admin UI", "Forms", "Tables", "Responsive layout"]
+  },
+  {
+    title: "Backend",
+    items: ["FastAPI", "Express", "REST API", "Session flows", "File uploads", "Validation"]
+  },
+  {
+    title: "Data & Storage",
+    items: ["PostgreSQL", "Neon", "Drizzle", "Cloudflare R2", "CSV import", "Report files"]
+  },
+  {
+    title: "Delivery",
+    items: ["Git", "GitHub", "Render", "Cloudflare DNS", "Playwright", "Smoke tests"]
+  }
+];
+
+const timeline = [
+  {
+    period: "2026 H1",
+    title: "Internal systems delivery",
+    detail:
+      "Built and improved workflow modules covering approvals, OKR evaluation, asset management, equipment maintenance, BOM control, and pricing operations."
+  },
+  {
+    period: "2026 Jun-Jul",
+    title: "Light Show launch",
+    detail:
+      "Built a public storefront and admin platform, connected storage and database services, added test coverage, and deployed the site to production."
+  },
+  {
+    period: "Now",
+    title: "Portfolio packaging",
+    detail:
+      "Turning project work into clear case studies that communicate product thinking, implementation scope, and production ownership."
+  }
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chris Tsai is a full-stack developer focused on enterprise workflow systems, internal tools, and production web products."
+    />
+    <meta property="og:title" content="Chris Tsai | Full-stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio focused on workflow automation, internal systems, and production web delivery."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/workflow-snapshot.png" />
+    <title>Chris Tsai | Full-stack Developer</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Chris Tsai home">
+        <span>CT</span>
+        <strong>Chris Tsai</strong>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#cases">Cases</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Full-stack Developer / Internal System Builder</p>
+          <h1>I turn business workflows into reliable web systems.</h1>
+          <p class="lead">
+            I build practical software for forms, approvals, operational data, file handling, and admin workflows. Recent work includes a production lighting storefront and multiple enterprise intranet systems.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="https://lighting.hj-corp.cc/" target="_blank" rel="noreferrer">
+              Open live product
+            </a>
+          </div>
+        </div>
+
+        <div class="system-preview" aria-label="Portfolio system preview">
+          <div class="preview-toolbar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>workflow-console</strong>
+          </div>
+          <img
+            class="preview-image"
+            src="/assets/workflow-snapshot.png"
+            alt="Dashboard style overview of Chris Tsai's portfolio systems"
+            loading="eager"
+          />
+          <div class="preview-grid">
+            <div class="metric-block">
+              <span>Public product</span>
+              <strong>Light Show</strong>
+              <small>Storefront + Admin + R2</small>
+            </div>
+            <div class="metric-block">
+              <span>Internal delivery</span>
+              <strong>11+</strong>
+              <small>Workflow modules shipped</small>
+            </div>
+            <div class="flow-map">
+              <div>Request</div>
+              <i></i>
+              <div>Review</div>
+              <i></i>
+              <div>Approve</div>
+              <i></i>
+              <div>Report</div>
+            </div>
+            <div class="signal-list">
+              <p><span></span> API connected</p>
+              <p><span></span> Files tracked</p>
+              <p><span></span> Build verified</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="strip">
+          <div>
+            <strong>Business workflows</strong>
+            <span>approval, forms, permissions</span>
+          </div>
+          <div>
+            <strong>Full-stack delivery</strong>
+            <span>frontend, API, database, storage</span>
+          </div>
+          <div>
+            <strong>Production mindset</strong>
+            <span>deployment, tests, maintainability</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2>Two project tracks that show both product delivery and enterprise systems work.</h2>
+          <p>
+            The public project is directly accessible. Internal company work is described at the architecture and workflow level to avoid exposing private data.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          {
+            projects.map((project) => (
+              <article class="project-card">
+                <div class="card-topline">
+                  <span>{project.label}</span>
+                  <a href={project.href}>Case study</a>
+                </div>
+                <h3>{project.title}</h3>
+                <p>{project.summary}</p>
+                <ul class="point-list">
+                  {project.points.map((point) => (
+                    <li>{point}</li>
+                  ))}
+                </ul>
+                <div class="tags">
+                  {project.stack.map((item) => (
+                    <span>{item}</span>
+                  ))}
+                </div>
+                {project.external && (
+                  <a class="text-link" href={project.external} target="_blank" rel="noreferrer">
+                    Visit live site
+                  </a>
+                )}
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="section cases" id="cases">
+        <div class="section-heading">
+          <p class="eyebrow">Case Studies</p>
+          <h2>How I frame and deliver systems.</h2>
+        </div>
+
+        <article class="case-row" id="case-light-show">
+          <div>
+            <p class="eyebrow">From idea to production</p>
+            <h3>Light Show: storefront, admin console, storage, and deployment</h3>
+          </div>
+          <div class="case-content">
+            <p>
+              Light Show is a production website for browsing lighting products and managing product operations. It gave me a complete path from product requirements to public deployment.
+            </p>
+            <dl>
+              <div>
+                <dt>Role</dt>
+                <dd>Owned frontend, API, database schema, file storage, deployment configuration, and verification workflow.</dd>
+              </div>
+              <div>
+                <dt>Implementation</dt>
+                <dd>React/Vite for the user and admin interfaces, Express for API routes, Neon PostgreSQL for data, Cloudflare R2 for files, and Render for hosting.</dd>
+              </div>
+              <div>
+                <dt>Quality</dt>
+                <dd>Added type checks, smoke tests, and Playwright coverage for homepage, admin login, product CRUD, search, product detail, settings, and inquiries.</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="case-row" id="case-intranet">
+          <div>
+            <p class="eyebrow">Internal workflow systems</p>
+            <h3>Enterprise intranet: approvals, assets, OKR, BOM, and operational tools</h3>
+          </div>
+          <div class="case-content">
+            <p>
+              Internal company systems are private, so the portfolio describes them without screenshots, credentials, or sensitive process data. The important signal is the type of complexity handled: permissions, states, attachments, review stages, reporting, and changing business rules.
+            </p>
+            <dl>
+              <div>
+                <dt>System types</dt>
+                <dd>OKR evaluation, ECN, overtime forms, business trip reimbursement, project code management, delegation, asset tracking, equipment maintenance, and BOM version control.</dd>
+              </div>
+              <div>
+                <dt>Engineering focus</dt>
+                <dd>Data forms, approval status transitions, role-based access, file attachments, searchable lists, report exports, and integrations with existing business data.</dd>
+              </div>
+              <div>
+                <dt>Value</dt>
+                <dd>Made operational processes easier to trace, review, search, and maintain compared with manual follow-ups and scattered spreadsheet files.</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+      </section>
+
+      <section class="section timeline-section" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Recent delivery timeline.</h2>
+        </div>
+        <div class="timeline">
+          {
+            timeline.map((item) => (
+              <article>
+                <span>{item.period}</span>
+                <h3>{item.title}</h3>
+                <p>{item.detail}</p>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="section worklog">
+        <div class="section-heading">
+          <p class="eyebrow">Recent Work</p>
+          <h2>Business domains covered in the past half year.</h2>
+        </div>
+        <div class="work-grid">
+          {
+            workHighlights.map((item) => (
+              <span>{item}</span>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>A stack for building and shipping business tools.</h2>
+        </div>
+        <div class="skill-grid">
+          {
+            skills.map((group) => (
+              <section class="skill-card">
+                <h3>{group.title}</h3>
+                <div class="tags">
+                  {group.items.map((item) => (
+                    <span>{item}</span>
+                  ))}
+                </div>
+              </section>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to roles where business workflows need strong implementation.</h2>
+          <p>
+            GitHub, LinkedIn, and a resume PDF can be added here once the final public profile information is confirmed.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://lighting.hj-corp.cc/" target="_blank" rel="noreferrer">Light Show</a>
+          <a class="button secondary" href="mailto:as006sa@gmail.com">as006sa@gmail.com</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

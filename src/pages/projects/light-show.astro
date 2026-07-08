@@ -1,0 +1,98 @@
+---
+import "../../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Case study for Light Show, a production lighting storefront and admin system built by Chris Tsai."
+    />
+    <title>Light Show Case Study | Chris Tsai</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Chris Tsai home">
+        <span>CT</span>
+        <strong>Chris Tsai</strong>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/projects/intranet-systems/">Intranet</a>
+        <a href="https://lighting.hj-corp.cc/" target="_blank" rel="noreferrer">Live site</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="case-hero">
+        <p class="eyebrow">Public Product Case Study</p>
+        <h1>Light Show: a production storefront and admin platform.</h1>
+        <p class="lead">
+          I built Light Show as an end-to-end product: storefront, admin workflows, API, PostgreSQL database, object storage, deployment, and verification checks.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://lighting.hj-corp.cc/" target="_blank" rel="noreferrer">Open live product</a>
+          <a class="button secondary" href="/">Back to portfolio</a>
+        </div>
+      </section>
+
+      <section class="section detail-grid">
+        <aside class="fact-panel">
+          <h2>Project Facts</h2>
+          <dl>
+            <div>
+              <dt>Type</dt>
+              <dd>Production storefront and admin system</dd>
+            </div>
+            <div>
+              <dt>Role</dt>
+              <dd>Full-stack implementation and deployment</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>React, Vite, Express, Neon PostgreSQL, Drizzle, Cloudflare R2, Render, Playwright</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>Live at lighting.hj-corp.cc</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <article class="article-body">
+          <h2>Problem</h2>
+          <p>
+            The project needed more than a static catalog. Products required structured data, multiple images, categories, search and filters, SEO metadata, catalog PDFs, customer inquiries, and an admin workflow for ongoing maintenance.
+          </p>
+
+          <h2>Approach</h2>
+          <p>
+            I split the system into a public storefront, admin interface, API server, database schema, shared validation/spec libraries, and test scripts. This made the product easier to reason about and safer to change.
+          </p>
+
+          <h2>Key Features</h2>
+          <ul class="feature-list">
+            <li>Product list, search, filters, product detail pages, related products, and recommended pairings.</li>
+            <li>Admin product CRUD, publish toggle, sort order, image upload/sorting, categories, SEO fields, and CSV import.</li>
+            <li>Inquiry workflow with status management, uploaded attachments, and storage cleanup.</li>
+            <li>Dashboard metrics for products, categories, recommendations, pending inquiries, and R2 usage.</li>
+            <li>Catalog PDF upload and storefront display.</li>
+          </ul>
+
+          <h2>Delivery Quality</h2>
+          <p>
+            The repository includes build checks, API smoke testing, and Playwright E2E tests covering homepage load, admin login, product CRUD, product detail, search, SEO title, settings, inquiries, attachments, and mobile admin navigation.
+          </p>
+
+          <h2>What This Shows</h2>
+          <p>
+            This project demonstrates product ownership beyond UI work: data modeling, file handling, operational admin design, production hosting, DNS/domain setup, and verification before release.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

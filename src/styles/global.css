@@ -214,6 +214,32 @@ h1 {
   max-width: 790px;
 }
 
+.target-roles {
+  border-top: 1px solid var(--line);
+  margin-top: 28px;
+  padding-top: 18px;
+}
+
+.target-roles .eyebrow {
+  margin-bottom: 10px;
+}
+
+.target-roles div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.target-roles span {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #26384a;
+  font-size: 13px;
+  font-weight: 850;
+  padding: 7px 10px;
+}
+
 .strength-list {
   border-top: 1px solid var(--line);
   display: grid;

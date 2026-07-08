@@ -3,23 +3,30 @@ import "../styles/global.css";
 
 const strengths = [
   {
-    title: "Business Workflow Systems",
-    titleZh: "企業流程系統",
-    detail: "Forms, approval states, permissions, attachments, reporting, and maintainable internal operations.",
-    detailZh: "表單、簽核狀態、權限、附件、報表，以及可維護的內部營運流程。"
+    title: "Spreadsheet-to-System Thinking",
+    titleZh: "從表單流程到系統設計",
+    detail: "Translate spreadsheet-heavy and manually tracked processes into searchable, permission-aware, maintainable web systems.",
+    detailZh: "將 Excel、紙本與人工追蹤流程，轉換成可查詢、可控權限、可維護的 Web 系統。"
   },
   {
     title: "Full-stack Implementation",
-    titleZh: "全端實作",
-    detail: "Vue, React, FastAPI, Express, PostgreSQL, file storage, admin interfaces, and data-heavy UI.",
-    detailZh: "Vue、React、FastAPI、Express、PostgreSQL、檔案儲存、後台介面與資料密集型 UI。"
+    titleZh: "全端實作能力",
+    detail: "Build frontend screens, API routes, database-backed workflows, file handling, admin interfaces, and data-heavy business UI.",
+    detailZh: "實作前端畫面、API、資料庫流程、檔案處理、後台管理介面與資料密集型業務 UI。"
   },
   {
     title: "Production Delivery",
-    titleZh: "上線交付",
-    detail: "GitHub version control, Render deployment, Cloudflare DNS/R2, build checks, smoke tests, and E2E coverage.",
-    detailZh: "GitHub 版控、Render 部署、Cloudflare DNS/R2、build 檢查、smoke test 與 E2E 測試。"
+    titleZh: "上線交付能力",
+    detail: "Ship with GitHub version control, Render deployment, Cloudflare DNS/R2, build checks, smoke tests, and E2E coverage.",
+    detailZh: "以 GitHub 版控、Render 部署、Cloudflare DNS/R2、build 檢查、smoke test 與 E2E 測試完成交付。"
   }
+];
+
+const targetRoles = [
+  "Full-stack Developer",
+  "Internal Tools Engineer",
+  "Business Systems Developer",
+  "Frontend-heavy Full-stack Role"
 ];
 
 const projectEntrances = [
@@ -30,8 +37,8 @@ const projectEntrances = [
     typeZh: "公開上線作品",
     href: "/projects/light-show/",
     external: "https://lighting.hj-corp.cc/",
-    summary: "Lighting storefront and admin platform with product management, inquiries, SEO, R2 storage, Neon PostgreSQL, and deployment.",
-    summaryZh: "燈飾展示網站與後台管理平台，包含商品管理、詢價、SEO、R2 儲存、Neon PostgreSQL 與部署。"
+    summary: "Lighting storefront and admin platform with product management, inquiries, SEO, R2 storage, Neon PostgreSQL, deployment, and E2E checks.",
+    summaryZh: "燈飾展示網站與後台管理平台，包含商品管理、詢價、SEO、R2 儲存、Neon PostgreSQL、部署與 E2E 檢查。"
   },
   {
     title: "Enterprise Intranet Systems",
@@ -40,8 +47,8 @@ const projectEntrances = [
     typeZh: "公司內部系統",
     href: "/projects/intranet-systems/",
     external: "",
-    summary: "Workflow modules for OKR, ECN, overtime, reimbursement, project codes, delegation, asset tracking, equipment maintenance, and BOM control.",
-    summaryZh: "涵蓋 OKR、ECN、加班、核銷、專案代碼、職務代理、資產追蹤、設備維護與 BOM 版控的流程系統。"
+    summary: "10+ workflow modules across OKR, ECN, overtime, reimbursement, project codes, delegation, asset tracking, equipment maintenance, and BOM control.",
+    summaryZh: "10+ 個內部流程模組，涵蓋 OKR、ECN、加班、核銷、專案代碼、職務代理、資產追蹤、設備維護與 BOM 版控。"
   }
 ];
 
@@ -51,23 +58,23 @@ const experience = [
     periodZh: "2026 上半年",
     title: "Enterprise internal systems development",
     titleZh: "企業內部系統開發",
-    detail: "Built and improved modules for approvals, OKR evaluation, assets, equipment maintenance, BOM control, pricing workflows, and operational reporting.",
-    detailZh: "開發並優化簽核、OKR 評核、資產、設備維護、BOM 版控、價格流程與營運報表相關模組。"
+    detail: "Delivered and improved 10+ modules for approvals, OKR evaluation, assets, equipment maintenance, BOM control, pricing workflows, and reporting.",
+    detailZh: "交付並優化 10+ 個模組，涵蓋簽核、OKR 評核、資產、設備維護、BOM 版控、價格流程與報表。"
   },
   {
     period: "2026 Jun-Jul",
     periodZh: "2026 六月至七月",
     title: "Light Show public launch",
     titleZh: "Light Show 公開上線",
-    detail: "Delivered a public storefront and admin system, connected database and object storage services, added verification checks, and deployed the product.",
-    detailZh: "完成公開前台與後台系統，串接資料庫與物件儲存，加入驗證檢查並部署上線。"
+    detail: "Delivered a public storefront and admin system with database, object storage, deployment, build checks, API smoke tests, and Playwright E2E tests.",
+    detailZh: "完成公開前台與後台系統，串接資料庫與物件儲存，並加入部署、build 檢查、API smoke test 與 Playwright E2E 測試。"
   },
   {
     period: "Now",
     periodZh: "目前",
     title: "Portfolio and case study packaging",
     titleZh: "作品集與案例整理",
-    detail: "Turning project work into clear case studies that communicate business context, technical ownership, and production delivery.",
+    detail: "Packaging project work into clear case studies that communicate business context, technical ownership, and production delivery.",
     detailZh: "將專案成果整理為清楚案例，呈現業務情境、技術負責範圍與上線交付能力。"
   }
 ];
@@ -81,12 +88,12 @@ const caseSummaries = [
     bullets: [
       "Built storefront, admin console, API server, database schema, file upload flow, and deployment configuration.",
       "Implemented product CRUD, category management, CSV import, inquiry handling, catalog PDFs, dashboard metrics, and SEO settings.",
-      "Added build checks, API smoke testing, and Playwright E2E coverage for important user and admin flows."
+      "Added build checks, API smoke testing, and Playwright E2E coverage for homepage, admin login, product CRUD, search, settings, and inquiries."
     ],
     bulletsZh: [
       "建立前台、後台、API server、資料庫 schema、檔案上傳流程與部署設定。",
       "實作商品 CRUD、分類管理、CSV 匯入、詢價處理、PDF 型錄、儀表板指標與 SEO 設定。",
-      "加入 build 檢查、API smoke test 與 Playwright E2E，覆蓋重要前台與後台流程。"
+      "加入 build 檢查、API smoke test 與 Playwright E2E，覆蓋首頁、後台登入、商品 CRUD、搜尋、設定與詢價流程。"
     ],
     stack: ["React", "Vite", "Express", "Neon PostgreSQL", "Drizzle", "Cloudflare R2", "Render", "Playwright"]
   },
@@ -110,10 +117,26 @@ const caseSummaries = [
 ];
 
 const skills = [
-  ["Frontend", "Vue 3, React, Vite, Admin UI, Forms, Tables, Responsive layout"],
-  ["Backend", "FastAPI, Express, REST API, Sessions, File uploads, Validation"],
-  ["Data & Storage", "PostgreSQL, Neon, Drizzle, Cloudflare R2, CSV import, Report files"],
-  ["Delivery", "Git, GitHub, Render, Cloudflare DNS, Playwright, Smoke tests"]
+  {
+    capability: "Frontend application development",
+    capabilityZh: "前端應用開發",
+    tools: "Vue 3, React, Vite, admin UI, forms, tables, responsive layouts"
+  },
+  {
+    capability: "API and workflow backend",
+    capabilityZh: "API 與流程後端",
+    tools: "FastAPI, Express, REST API, sessions, validation, file uploads"
+  },
+  {
+    capability: "Database and file storage",
+    capabilityZh: "資料庫與檔案儲存",
+    tools: "PostgreSQL, Neon, Drizzle, Cloudflare R2, CSV import, report files"
+  },
+  {
+    capability: "Deployment and verification",
+    capabilityZh: "部署與驗證",
+    tools: "Git, GitHub, Render, Cloudflare DNS, Playwright, smoke tests"
+  }
 ];
 ---
 
@@ -175,13 +198,23 @@ const skills = [
             <span data-zh>作品集摘要</span>
           </p>
           <h1 id="intro-title">
-            <span data-en>Full-stack developer focused on business workflow systems.</span>
-            <span data-zh>專注企業流程系統的全端工程師。</span>
+            <span data-en>I turn spreadsheet-heavy business processes into traceable web systems.</span>
+            <span data-zh>我將 Excel、紙本與人工追蹤流程，轉換成可追蹤的 Web 系統。</span>
           </h1>
           <p class="lead">
-            <span data-en>I build practical systems for forms, approvals, operational data, file handling, admin workflows, and production deployment. My recent work combines enterprise intranet modules with a live public product.</span>
-            <span data-zh>我開發表單、簽核、營運資料、檔案處理、後台管理與可部署上線的系統。近期成果包含公司內網流程模組，以及一個已公開上線的產品。</span>
+            <span data-en>I build practical systems for forms, approvals, operational data, file handling, admin workflows, and production deployment. Recent work includes 10+ enterprise intranet modules and one live public product.</span>
+            <span data-zh>我開發表單、簽核、營運資料、檔案處理、後台管理與可部署上線的系統。近期成果包含 10+ 個企業內網模組，以及一個已公開上線的產品。</span>
           </p>
+
+          <div class="target-roles">
+            <p class="eyebrow">
+              <span data-en>Target Roles</span>
+              <span data-zh>目標職務</span>
+            </p>
+            <div>
+              {targetRoles.map((role) => <span>{role}</span>)}
+            </div>
+          </div>
 
           <div class="strength-list" aria-label="Core strengths">
             {
@@ -244,7 +277,7 @@ const skills = [
 
       <section class="section" id="cases">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Case Notes</p>
+          <p class="eyebrow">Selected Engineering Ownership</p>
           <h2>
             <span data-en>What I actually owned in each project.</span>
             <span data-zh>我在專案中實際負責的內容。</span>
@@ -278,16 +311,16 @@ const skills = [
         <div class="section-heading compact-heading">
           <p class="eyebrow">Skills</p>
           <h2>
-            <span data-en>Technical stack used in real delivery.</span>
-            <span data-zh>實際交付中使用的技術組合。</span>
+            <span data-en>Capabilities and tools used in real delivery.</span>
+            <span data-zh>實際交付中使用的能力與工具。</span>
           </h2>
         </div>
         <div class="skill-matrix">
           {
-            skills.map(([group, items]) => (
+            skills.map((item) => (
               <article>
-                <h3>{group}</h3>
-                <p>{items}</p>
+                <h3><span data-en>{item.capability}</span><span data-zh>{item.capabilityZh}</span></h3>
+                <p>{item.tools}</p>
               </article>
             ))
           }

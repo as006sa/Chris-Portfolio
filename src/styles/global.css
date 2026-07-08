@@ -121,8 +121,8 @@ main {
 
 .resume-hero {
   display: grid;
-  gap: 32px;
-  grid-template-columns: 340px 1fr;
+  gap: 36px;
+  grid-template-columns: 315px 1fr;
   align-items: start;
 }
 
@@ -153,12 +153,12 @@ main {
 }
 
 .identity-card > div {
-  padding: 22px;
+  padding: 20px;
 }
 
 .identity-name {
   color: var(--text);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 950;
   line-height: 1.15;
 }
@@ -201,17 +201,17 @@ main {
 
 h1 {
   color: var(--text);
-  font-size: 48px;
-  line-height: 1.08;
-  max-width: 780px;
+  font-size: 44px;
+  line-height: 1.12;
+  max-width: 690px;
 }
 
 .lead {
   color: var(--muted);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.75;
   margin-top: 20px;
-  max-width: 790px;
+  max-width: 760px;
 }
 
 .target-roles {
@@ -250,8 +250,8 @@ h1 {
 .strength-list article {
   border-bottom: 1px solid var(--line);
   display: grid;
-  gap: 24px;
-  grid-template-columns: 210px 1fr;
+  gap: 20px;
+  grid-template-columns: 180px 1fr;
   padding: 18px 0;
 }
 
@@ -367,12 +367,14 @@ h1 {
 .resume-table h3 {
   color: var(--text);
   font-size: 16px;
+  font-weight: 850;
   line-height: 1.45;
 }
 
 .resume-table p {
   color: var(--muted);
   font-size: 15px;
+  font-weight: 650;
   line-height: 1.7;
 }
 
